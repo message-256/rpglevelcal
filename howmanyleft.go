@@ -23,6 +23,7 @@ func main() {
 	start,end,inc := numbers[0],numbers[1],numbers[2]
 	if end == start {
 		fmt.Println(end, "to", start, " == 0")
+		os.Exit(0)
 	}
 	if end < start {
 		end, start = start, end
